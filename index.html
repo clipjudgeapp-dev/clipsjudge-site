@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ClipsJudge · Live stream clips, judged</title>
+<meta name="description" content="ClipsJudge watches Twitch, Kick and YouTube streams while they're live, cuts the moments people share and scores each clip out of 10. Vertical clips with subtitles, a title, a caption with credit and hashtags.">
+<meta name="theme-color" content="#090705">
+<meta property="og:title" content="ClipsJudge · Live stream clips, judged">
+<meta property="og:description" content="Clipped before chat calms down. 60 hours of clipping for $19, live or past streams.">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+<meta property="og:image" content="https://clipsjudge.com/og-image.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://clipsjudge.com/og-image.png">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ClipsJudge","url":"https://clipsjudge.com","logo":"https://clipsjudge.com/icon-512.png","sameAs":["https://www.instagram.com/clipsjudge/","https://www.youtube.com/channel/UC_itZuvUH5DGEf6iC6bG_gw"]}</script>
+<script src="analytics.js" defer></script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="ClipsJudge home"><i></i>ClipsJudge</a>
+    <nav aria-label="Main">
+      <a class="hide-sm" href="#how">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="https://app.clipsjudge.com/app">Log in</a>
+      <a class="icon hide-sm" href="https://www.instagram.com/clipsjudge/" target="_blank" rel="noopener" aria-label="ClipsJudge on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a class="icon hide-sm" href="https://www.youtube.com/channel/UC_itZuvUH5DGEf6iC6bG_gw" target="_blank" rel="noopener" aria-label="ClipsJudge on YouTube"><svg width="20" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg></a>
+      <a class="btn sm hide-sm" href="https://app.clipsjudge.com/app/signup?src=website">Sign up free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="status"><b>LIVE</b>Free trial · no card needed</span>
+      <h1><span>Clipped before</span><span>chat calms down.</span></h1>
+      <p class="lead">ClipsJudge watches your streamers on Twitch, Kick and YouTube while they're live, cuts the moments people share and scores every clip out of 10. You post first.</p>
+      <div class="ctas">
+        <a class="btn" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+        <a class="btn line" href="#how">See how it works</a>
+      </div>
+      <p class="trust">3-day free trial. No card needed. Already have an account? <a href="https://app.clipsjudge.com/app/login">Log in</a></p>
+    </div>
+
+    <figure class="stage" aria-hidden="true">
+      <div class="phone" id="phone">
+        <div class="screen">
+          <div class="feed"></div>
+          <div class="flash"></div>
+          <div class="top"><span class="pill-live">LIVE</span><span class="viewers" id="viewers">48.2K watching</span></div>
+          <ul class="chat" id="chat"></ul>
+          <div class="wave" id="wave"></div>
+          <div class="cut">
+            <span class="clipped">Clipped 0:24</span>
+            <div class="score"><b id="score">0.0</b><small>AI score</small></div>
+            <p class="sub">No way bro, <em>last</em> second!</p>
+          </div>
+        </div>
+      </div>
+      <figcaption>Chat explodes, ClipsJudge cuts the moment and judges it before the stream moves on.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="hours" aria-labelledby="hoursTitle">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="hoursTitle">60 hours of clipping for $19.</h2>
+      <p class="lead">Other AI clippers charge the same and cover a few hours of uploaded video. Streams are long, so we price for streams.</p>
+    </div>
+    <div class="bars">
+      <div class="row">
+        <div class="label"><b>ClipsJudge Starter</b><span>60 hours</span></div>
+        <div class="track"><div class="fill" style="width:100%"></div></div>
+      </div>
+      <div class="row">
+        <div class="label"><b>Typical AI clippers, same price</b><span>3 to 8 hours</span></div>
+        <div class="track"><div class="fill them" style="width:8.3%"></div></div>
+      </div>
+    </div>
+    <p class="note">Based on the public prices of popular AI clipping tools, October 2026.</p>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="howTitle">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="howTitle">You add streamers. We watch every second.</h2>
+      <p class="lead">No uploading, no scrubbing through a 10-hour VOD.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Add your streamers</h3><p>Paste a Twitch, Kick or YouTube channel link once.</p></li>
+      <li><h3>They go live</h3><p>Clipping starts by itself, even at 3 a.m., even while you sleep.</p></li>
+      <li><h3>The moment hits</h3><p>Voice spikes, chat floods, the streamer jumps out of the chair. It's cut vertical with subtitles.</p></li>
+      <li><h3>You get the verdict</h3><p>Every clip is scored out of 10. Only 5+ reach you, with a title, a caption that credits the creator, and hashtags.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section aria-labelledby="momTitle">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="momTitle">It knows what a clip looks like.</h2>
+      <p class="lead">It reads chat, voice, movement and what's being said at the same time, and watches the picture like a person would.</p>
+    </div>
+    <div class="moments">
+      <span>Rage</span><span>Clutch play</span><span>Chat roasts the streamer</span><span>Jump scare</span><span>Big donation</span><span>Fan encounter</span><span>Rage quit</span><span>Guest joins</span><span>Storytime</span><span>Awkward silence</span>
+    </div>
+    <p class="next">Podcasts and comedy shows are next.</p>
+  </div>
+</section>
+
+<section aria-labelledby="vsTitle">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="vsTitle">Built for clippers, not editors.</h2>
+      <p class="lead">Most AI clip tools wait for a finished video. ClipsJudge goes after the moment while it's still happening.</p>
+    </div>
+    <div class="vs">
+      <div class="r"><h3>Live streams</h3><p class="us">Clips while it's happening</p><p class="them">after the stream, once you upload it</p></div>
+      <div class="r"><h3>Starting a job</h3><p class="us">Starts by itself when they go live</p><p class="them">you paste every video</p></div>
+      <div class="r"><h3>What you pay for</h3><p class="us">Hours of stream we clip</p><p class="them">minutes uploaded or credits</p></div>
+      <div class="r"><h3>Quality</h3><p class="us">A strict judge, only 6+ clips by default</p><p class="them">dozens of average clips to sort</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="campaigns" aria-labelledby="campTitle">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="campTitle">Clipping a paid campaign? Give it the brief.</h2>
+      <p class="lead">Paste the campaign's brief, or upload its PDF on Pro. The AI reads it once and you check what it understood. Then every clip of that streamer is matched against it, live.</p>
+    </div>
+    <div class="vs">
+      <div class="r"><h3>The moments they asked for</h3><p class="us">Clips that match the brief are marked 🎯 and come first</p></div>
+      <div class="r"><h3>Even quiet ones</h3><p class="us">The live AI watcher also looks for the brief's moments, not only the loud ones</p></div>
+      <div class="r"><h3>Hashtags and credit</h3><p class="us">The campaign's required hashtags and credit line go into every copied caption</p></div>
+      <div class="r"><h3>Length rules</h3><p class="us">Clips outside the brief's length are flagged before you post</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" aria-labelledby="priceTitle">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="priceTitle">Pay for 30 days. Renew if you love it.</h2>
+      <p class="lead">Launch prices for our first 50 clients. No automatic charges. In India, pay in rupees with UPI, cards or netbanking.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <div class="name">Free trial</div>
+        <div class="price">$0</div>
+        <ul><li>2 hours of clipping or 3 days, whichever comes first</li><li>1 streamer</li><li>Clips carry a small ClipsJudge badge</li><li>No card needed</li></ul>
+        <a class="btn line" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+      </div>
+      <div class="plan pro">
+        <div class="name">Pro <span class="tag">Most popular</span></div>
+        <div class="price">$39<small>/ 30 days</small></div>
+        <p class="launch">Launch price · first 50 clients</p>
+        <p class="inr">₹2,499 in India</p>
+        <ul><li>120 hours of clipping <b style="color:var(--gold)">+30 bonus hours your first month</b></li><li>15 streamers</li><li>2 streamers clipped at the same time</li><li>Clips kept 60 days, no badge</li><li>10 campaign briefs, PDF briefs too</li></ul>
+        <a class="btn" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+      </div>
+      <div class="plan">
+        <div class="name">Starter</div>
+        <div class="price">$19<small>/ 30 days</small></div>
+        <p class="launch">Launch price · first 50 clients</p>
+        <p class="inr">₹999 in India</p>
+        <ul><li>60 hours of clipping</li><li>3 streamers</li><li>1 streamer clipped at a time</li><li>Clips kept 30 days, no badge</li><li>1 campaign brief</li></ul>
+        <a class="btn line" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+      </div>
+    </div>
+    <p class="plans-note">Need more? Add 25 or 100 hours anytime. Everything is on the <a href="pricing.html">pricing page</a>.</p>
+  </div>
+</section>
+
+<section aria-labelledby="joinTitle">
+  <div class="wrap">
+    <div class="join" id="join">
+      <div>
+        <h2 id="joinTitle">Start free in 30 seconds.</h2>
+        <p class="lead" style="margin-top:14px">Type your email, enter the code we send you, pick a password, and you're in your dashboard. 2 hours of clipping over 3 days, no card needed.</p>
+      </div>
+      <div class="startsteps">
+        <div><b>1. Your email</b><span>We send you a 6-digit code.</span></div>
+        <div><b>2. The code + a password</b><span>Check your inbox (and spam, just in case), then pick a password for next time.</span></div>
+        <div><b>3. Add a streamer</b><span>When they go live, clipping starts by itself.</span></div>
+        <a class="btn wide" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+        <span class="fine">Already have an account? <a href="https://app.clipsjudge.com/app/login">Log in</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faqTitle">
+  <div class="wrap faq">
+    <h2 id="faqTitle">Questions</h2>
+    <div>
+      <details><summary>When does ClipsJudge launch?</summary><p>We're clipping real streams right now. Waitlist members get access first, in small groups, before the public launch.</p></details>
+      <details><summary>Which platforms does it work with?</summary><p>Twitch, Kick and YouTube live streams. Clips are vertical with subtitles, made for YouTube Shorts, TikTok and Instagram Reels.</p></details>
+      <details><summary>Do I need a powerful computer?</summary><p>No. ClipsJudge runs in the cloud. Your computer can be off; you open your dashboard on any phone or laptop and download the finished clips.</p></details>
+      <details><summary>Does it only clip loud moments?</summary><p>No. It combines chat, voice, movement and what was said, then an AI judge watches the clip before you see it. Funny, awkward and wholesome moments count too.</p></details>
+      <details><summary>Is there a free trial?</summary><p>Yes. Every new account gets 2 hours of clipping over 3 days, with a small badge on the clips. No card needed.</p></details>
+      <details><summary>Do plans renew automatically?</summary><p>No. Each plan is a 30-day pass: you pay once and renew only if you want to. Try everything in the free trial first, because payments aren't refundable except for billing mistakes or a fault on our side. See the <a href="refund.html">refund policy</a>.</p></details>
+      <details><summary>Do I need the right to clip a stream?</summary><p>Yes. Clip your own streams, or streams whose creators allow clipping (many run official clipping programs). Always credit the creator. See our <a href="terms.html">terms</a>.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Stop scrubbing through 10-hour VODs.</h2>
+    <p>Let ClipsJudge do the watching. You post the bangers.</p>
+    <a class="btn" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 ClipsJudge. Jaipur, Rajasthan, India</span>
+    <span class="social"><a href="https://www.instagram.com/clipsjudge/" target="_blank" rel="noopener" aria-label="ClipsJudge on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a><a href="https://www.youtube.com/channel/UC_itZuvUH5DGEf6iC6bG_gw" target="_blank" rel="noopener" aria-label="ClipsJudge on YouTube"><svg width="20" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12 31 31 0 0 0 1 16.8a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15.1V8.9l5.8 3.1-5.8 3.1z"/></svg><span>YouTube</span></a></span>
+    <span class="links"><a href="pricing.html">Pricing</a><a href="https://app.clipsjudge.com/app">Log in</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a><a href="copyright.html">Copyright</a><a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <span><b>60 hours for $19</b>3-day free trial</span>
+  <a class="btn sm" href="https://app.clipsjudge.com/app/signup?src=website">Start free trial</a>
+</div>
+
+<script>
+(() => {
+  // sticky button on phones: shows after the hero, hides at the form
+  const dock = document.getElementById("dock"), hero = document.querySelector(".hero"), join = document.getElementById("join");
+  let pastHero = false, atJoin = false;
+  const set = () => dock.classList.toggle("on", pastHero && !atJoin);
+  new IntersectionObserver(([e]) => { pastHero = !e.isIntersecting; set(); }).observe(hero);
+  new IntersectionObserver(([e]) => { atJoin = e.isIntersecting; set(); }, {threshold: .15}).observe(join);
+
+  // the phone: calm chat, then the moment, the cut and the score
+  const phone = document.getElementById("phone"), chat = document.getElementById("chat"),
+        wave = document.getElementById("wave"), score = document.getElementById("score"), viewers = document.getElementById("viewers");
+  const bars = Array.from({length: 26}, () => wave.appendChild(document.createElement("span")));
+  const names = ["kxng_lee", "milo", "ayeshaa", "tofu99", "ravi_k", "zoe", "brayden", "nate.w", "yuki", "sam"];
+  const colors = ["#F7D488", "#8FD3FF", "#FF9AA8", "#B5F29B", "#E2B6FF"];
+  const calm = ["he's cooking", "W stream", "bro is locked in", "first time here", "lmaooo", "one more try", "chat be nice", "the music 🔥"];
+  const hot = ["NO WAY", "CLIP IT", "NO WAYYYY", "HE DID IT", "W W W W", "BRO 😭", "INSANE", "CLIP THAT"];
+  const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const pick = (a) => a[Math.floor(Math.random() * a.length)];
+  function say(text, isHot) {
+    const li = document.createElement("li");
+    if (isHot) li.className = "hot";
+    const b = document.createElement("b"); b.style.color = pick(colors); b.textContent = pick(names);
+    li.append(b, text); chat.appendChild(li);
+    while (chat.children.length > 14) chat.firstChild.remove();
+  }
+  function level(h) { bars.forEach((s) => s.style.height = Math.max(8, Math.min(100, h * (0.45 + Math.random() * 0.9))) + "%"); }
+  if (still) {
+    calm.slice(0, 4).forEach((t) => say(t)); hot.slice(0, 4).forEach((t) => say(t, true)); level(60);
+    phone.classList.add("cutting", "judged"); score.textContent = "9.2"; return;
+  }
+  let t = 0, timer = null;
+  function tick() {
+    t += 1;                                   // one tick = 200 ms, a loop is 11 seconds
+    const s = t % 55;
+    if (s === 0) { phone.classList.remove("hot", "cutting", "judged"); score.textContent = "0.0"; }
+    if (s < 15) { if (s % 4 === 0) say(pick(calm)); level(22); }
+    else if (s < 26) { say(pick(hot), true); if (s % 2) say(pick(hot), true); level(95); phone.classList.add("hot");
+                       viewers.textContent = (48.2 + (s - 14) * 0.4).toFixed(1) + "K watching"; }
+    else if (s === 26) { phone.classList.remove("hot"); phone.classList.add("cutting"); level(40); }
+    else if (s >= 30 && s <= 38) { const v = Math.min(9.2, (s - 29) * 1.15); score.textContent = v.toFixed(1);
+                                   if (s === 30) phone.classList.add("judged"); }
+    else if (s > 38 && s % 5 === 0) { say(pick(hot), true); level(30); }
+  }
+  const run = () => { if (!timer) timer = setInterval(tick, 200); };
+  const stop = () => { clearInterval(timer); timer = null; };
+  new IntersectionObserver(([e]) => e.isIntersecting ? run() : stop()).observe(phone);
+  calm.slice(0, 5).forEach((t) => say(t));
+})();
+</script>
+</body>
+</html>
