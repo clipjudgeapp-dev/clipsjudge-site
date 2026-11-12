@@ -1,8 +1,8 @@
 /* ClipsJudge tracking codes. Paste your IDs between the quotes, save, and upload this file to
-   Netlify again. Leave them empty to turn tracking off.
-     GA4_ID:   Google Analytics > Admin > Data streams > your website > "Measurement ID" (G-XXXXXXX)
+   GitHub again. Leave them empty to turn tracking off.
+     GA4_ID:   a Google tag: Google Ads (AW-...) or Google Analytics "Measurement ID" (G-XXXXXXX)
      PIXEL_ID: Meta Events Manager > your pixel > the number (15-16 digits)              */
-var GA4_ID = "";
+var GA4_ID = "AW-18569273343";   // v68: Google Ads (counts visits from ads)
 var PIXEL_ID = "";
 
 (function () {
